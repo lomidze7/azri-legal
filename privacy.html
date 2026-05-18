@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Azri</title>
+  <meta name="description" content="Azri privacy policy: what data we collect, why, and how to delete it." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111418;
+      --muted: #555a63;
+      --rule: #e6e8eb;
+      --accent: #5A56D0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0c10;
+        --fg: #e9eaee;
+        --muted: #9ea2ab;
+        --rule: #21242a;
+        --accent: #8685ef;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+    h1 {
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.25em;
+    }
+    h2 {
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
+      margin: 2.25em 0 0.5em;
+    }
+    p, li { font-size: 1rem; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+    hr { border: none; border-top: 1px solid var(--rule); margin: 2rem 0; }
+    a { color: var(--accent); }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.25em 0; }
+    code { background: var(--rule); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.95em; }
+    .nav { color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="nav"><a href="./">Azri</a></p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective date: 18 May 2026</p>
+
+    <p>
+      This Privacy Policy explains what information Azri ("we", "us") collects when you use the Azri mobile application,
+      why we collect it, and how you can delete it. By using Azri you agree to this policy.
+    </p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      Azri is a mobile app developed by Giorgi Lomidze, based in Georgia. You can reach us at
+      <a href="mailto:giolomimi@gmail.com">giolomimi@gmail.com</a>.
+    </p>
+
+    <h2>2. What we collect and why</h2>
+    <p>We collect only what we need to run the app. Specifically:</p>
+    <ul>
+      <li>
+        <strong>Account identifiers (email and name)</strong> — provided by Apple when you sign in with Apple. Stored in our
+        backend (Appwrite) so we can identify your account across devices. If you choose Apple's private-relay email,
+        we never see your real address.
+      </li>
+      <li>
+        <strong>Subscription state</strong> — RevenueCat receives an anonymous user ID and your purchase status from
+        Apple. We use this to unlock premium features. We never see your payment details — those stay with Apple.
+      </li>
+      <li>
+        <strong>Brain dump text</strong> — when you submit text or a transcribed voice note to be parsed into tasks,
+        that text is transmitted to OpenRouter (a third-party AI provider) via our server. The provider processes the
+        request and returns structured tasks. We do not store the raw text on our servers after the response is
+        returned; OpenRouter's own retention is governed by their policy.
+      </li>
+      <li>
+        <strong>Diary entries</strong> — stored in Appwrite, tied to your account, so they sync to your other devices.
+      </li>
+      <li>
+        <strong>Trial timestamp</strong> — a single number marking when your 3-day free trial started, stored in your
+        Appwrite account preferences. Used only to determine whether your trial is still active.
+      </li>
+      <li>
+        <strong>Anonymous usage counter</strong> — a small per-device counter (number of times you've used Azri's
+        AI parsing) is stored keyed by your device's identifier-for-vendor. This is not linked to your identity.
+      </li>
+    </ul>
+
+    <h2>3. Tasks, habits, and other on-device data</h2>
+    <p>
+      Most of your data — including tasks, habits, mood logs, energy logs, and motivation cards — is stored only
+      on your device using MMKV (a local storage library). It never leaves your phone. If you delete the app, that
+      data is gone.
+    </p>
+
+    <h2>4. Third parties</h2>
+    <ul>
+      <li><strong>Apple</strong> — Apple Sign-In, App Store purchases, push notifications (when enabled).</li>
+      <li><strong>Appwrite</strong> — account storage, diary sync, function execution. Hosted at api.kalorio.ge.</li>
+      <li><strong>RevenueCat</strong> — manages the link between your Apple subscription and your premium entitlement.</li>
+      <li><strong>OpenRouter</strong> — processes the text you submit to the Brain Dump feature and returns parsed tasks.</li>
+    </ul>
+    <p>We do not sell or rent your data to advertisers. We do not use it for cross-app or cross-site tracking.</p>
+
+    <h2>5. How long we keep it</h2>
+    <p>
+      We retain your account data until you delete your account. The Brain Dump text is not persisted beyond the
+      single request that generates the task list. Anonymous usage counters persist indefinitely on Appwrite but
+      contain no personal information.
+    </p>
+
+    <h2>6. Deleting your account and data</h2>
+    <p>
+      In the Azri app, go to <em>Settings → Account → Delete account</em>. This:
+    </p>
+    <ul>
+      <li>Permanently erases your Appwrite account (email, name, trial timestamp, diary entries).</li>
+      <li>Deletes your device's anonymous usage counter on our servers.</li>
+      <li>Signs you out of the app.</li>
+    </ul>
+    <p>
+      Your App Store subscription, if any, continues until the end of the current billing period — cancel it
+      separately in <em>iOS Settings → Apple ID → Subscriptions</em>.
+    </p>
+    <p>
+      To delete locally-stored data (tasks, habits, etc.), uninstall the app.
+    </p>
+
+    <h2>7. Children</h2>
+    <p>
+      Azri is not directed at children under 13. We do not knowingly collect data from anyone under 13. If we
+      learn that we have, we will delete the account.
+    </p>
+
+    <h2>8. International data transfers</h2>
+    <p>
+      We are based in Georgia. Our Appwrite instance is hosted in Europe. OpenRouter is based in the United States.
+      Apple and RevenueCat operate globally. By using Azri you consent to your data being processed in these
+      jurisdictions.
+    </p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>
+      We may update this policy as the app evolves. Material changes will be communicated in-app or via the email
+      tied to your account. The "Effective date" at the top of this page reflects the latest version.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      Questions? Email <a href="mailto:giolomimi@gmail.com">giolomimi@gmail.com</a>.
+    </p>
+
+    <hr />
+    <p class="meta">© 2026 Giorgi Lomidze. All rights reserved.</p>
+  </main>
+</body>
+</html>
